@@ -1,0 +1,80 @@
+@media screen and (min-width:1280px)
+{.container
+{
+    max-width: 1260px;
+}
+}
+
+.contact
+{
+    text-align: justify;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+
+.head
+{
+    margin-top: 5%;
+    display: flex;
+
+}
+
+.nav-tabs
+{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+.head_mini
+{
+
+    width: 100%;
+    
+}
+
+.info-med
+{
+    display: flex;
+    margin-top: 5%;
+}
+
+
+.col
+{
+    display: block;
+    padding: 0;
+}
+
+.col-3
+{
+    padding: 0;
+}
+
+
+.col-6
+{
+    padding: 0;
+}
+
+img
+{
+    margin-right: 4%;
+}
+
+
+h3
+{
+    font-family: 'GilroyRegular';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 161.4%;   
+}
+
+
+
+

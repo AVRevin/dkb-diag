@@ -1,0 +1,103 @@
+
+<div class="container">
+    <div class="contact">
+        <div style="margin-left: 0;margin-right: auto;"><h1>Контактная информация</h1></div>
+         <div style="margin-left: auto;margin-right: 0;"><a>Главная / Контакты</a></div>
+     </div>
+
+    <div class="head">
+        <div class="head_mini"> 
+            <ul ngbNav #nav="ngbNav" style="border: none;" [(activeId)]="active" class="nav-tabs" >
+                <li [ngbNavItem]="1" (click)="onSave('1')">
+                  <a ngbNavLink style="border: none;"><h3 id="med" style="border-bottom: 5px solid #0067A2;">МЕДИЦИНСКОЕ УЧРЕЖДЕНИЕ</h3></a>
+                  <ng-template ngbNavContent>
+                    <div class="info-med">
+                      <div class="col">                        
+                        <h3><a>
+                        <img src="/assets/images/address.svg" alt="card-doctor">
+                        </a>Адрес</h3><br>394024, г. Воронеж, пер. Здоровья, д.2
+                      </div>
+                      <div class="col">
+                        <h3><a>
+                          <img src="/assets/images/website.svg" alt="card-doctor">
+                          </a>Сайт</h3><br>dkbvrn.ru
+                        </div>
+                      <div class="col">
+                        <h3><a>
+                          <img src="/assets/images/e-mail.svg" alt="card-doctor">
+                        </a>E-mail</h3><br>dorbl@mail.ru
+                      </div>
+                      <div class="col">
+                        <h3><a>
+                          <img src="/assets/images/watch.svg" alt="card-doctor">
+                        </a>Режим работы приёмного отделения</h3><br>Круглосуточно
+                      </div>
+                   </div>
+
+
+                   <div class="info-med" style="margin-top: 2%;">
+                    <div class="col">
+                      <h3><a>
+                      <img src="/assets/images/phone.svg" alt="card-doctor" style="margin-right: 2%;">
+                     </a>Телефон для справок (Call - центр)</h3><br>+7 (473) 212-05-15
+                    </div>
+                    <div class="col"> 
+                      <h3><a>
+                      <img src="/assets/images/watch.svg" alt="card-doctor" style="margin-right: 2%;">
+                    </a>Режим работы Call - центра</h3><br>
+                      <div class="col" style="display: flex">
+                         <div class="col-4"><h4>Понедельник - Пятница:</h4><br>8.00 - 19.00</div>
+                         <div class="col-2"><h4>Суббота:</h4><br>8.00 - 12.00</div>
+                         <div class="col"><h4>Воскресенье:</h4><br>Выходной</div>
+                      </div>
+                    </div>              
+                 </div>
+                  </ng-template>
+                </li>
+
+                <li [ngbNavItem]="2" (click)="onSave('2')">
+                  <a ngbNavLink style="border: none;"><h3 id="otd" style="color: black;">ОТДЕЛЕНИЕ ЛУЧЕВОЙ ДИАГНОСТИКИ</h3></a>
+                  <ng-template ngbNavContent>
+                    <div class="info-med">
+
+                      <div class="col-6"> 
+                        <h3><a>
+                        <img src="/assets/images/watch.svg" alt="card-doctor" style="margin-right: 2%;">
+                      </a>Режим работы отделения лучевой диагностики</h3><br>
+                        <div class="col-6" style="display: flex">
+                           <div class="col-8"><h4>Понедельник - Пятница:</h4><br>в две смены - ежедневно<br>8.00 - 20.00</div>
+                           <div class="col-4"><h4>Суббота:</h4><br>8.00 - 14.00</div>
+                           <div class="col-4"><h4>Воскресенье:</h4><br>Выходной</div>
+                        </div>
+                      </div>    
+
+                      <div class="col-3">
+                        <h3><a>
+                          <img src="/assets/images/phone.svg" alt="card-doctor">
+                          </a>Контактные телефоны</h3><br>
+                          <div class="col-12" style="display: flex">
+                            <div class="col"><h4>Кабинет МРТ:</h4><br>+7 (473) 265-20-73</div>
+                            <div class="col"><h4>Кабинет РКТ:</h4><br>+7 (473) 265-37-86</div>
+                         </div>
+                        </div>
+
+                      <div class="col">
+                        <h3><a>
+                          <img src="/assets/images/e-mail.svg" alt="card-doctor">
+                        </a>E-mail отделения</h3><br>dkb-mrt@yandex.ru
+                      </div>
+                   </div>
+
+                  </ng-template>
+                </li>
+              </ul>
+              <div [ngbNavOutlet]="nav"></div>    
+        </div>
+    </div>
+
+    <h2 style="margin-top:4%; margin-bottom:3% ">Как добраться</h2>
+    <iframe style="margin-bottom: 4%;" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac106ff35242013ea4364fd153a8410425741f6e68b2b0647ce8a8f0fdfce1232&amp;source=constructor" width="1260" height="540" frameborder="0"></iframe>
+
+
+      
+</div>

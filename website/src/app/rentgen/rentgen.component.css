@@ -1,0 +1,112 @@
+@media screen and (min-width:1280px)
+{.container
+{
+    max-width: 1260px;
+}
+}
+
+.container
+{
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+.diag
+{
+    text-align: justify;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+.rentgen
+{
+    margin-left:0 ;
+    margin-right: auto;
+    width: 46%;
+    background-color: #0067A2;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-top: 1px solid rgba(0, 103, 162, 0.3);
+    border-bottom: 1px solid rgba(0, 103, 162, 0.3);
+
+
+}
+
+#rentgen-text
+{
+color: #FFFFFF;
+}
+
+#head-rentgen
+{
+    color: #FFFFFF;
+}
+
+.info
+{
+    margin-top: 5%;
+}
+
+.info-block
+{
+    display: flex;
+}
+
+.edge
+{
+    margin-top: 2%;
+    display: flex;
+}
+
+.work-time
+{
+    display: flex;
+    margin-top: 3%;
+}
+
+.col
+{
+    padding: 0;
+}
+
+.col-4
+{
+    padding: 0;
+}
+
+.col-2
+{
+    padding: 0;
+}
+.phone
+{
+    font-family: 'GilroyRegular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0067A2;
+
+}
+
+h4
+{
+    font-family: 'GilroyRegular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-left: 2%;
+
+}
+
+
+h2
+{
+    margin-bottom: 3%;
+}

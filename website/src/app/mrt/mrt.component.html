@@ -1,0 +1,120 @@
+<div class="container">
+    <div class="diag">
+        <div><h1 style="margin-left:0 ; margin-right: auto;">Виды диагностики</h1></div>
+        <div style="margin-left:auto ; margin-right: 0 ;">Главная / Услуги / Диагностика / Магнитно-резонансная томография </div>
+    </div>
+    <h2>Магнитно-резонанская томография</h2>
+
+    <div class="mrt">       
+        <ul ngbNav #nav="ngbNav" class="mri" [(activeId)]="active">
+         <li [ngbNavItem]="1" (click)="onSave('1')" id="ngbNavItem_1">
+             <a ngbNavLink class="ngbNavLink_1" >
+                 <div style="display: flex;">
+                     <h2 id="head-open" style="margin-left:0; margin-right: auto;">Открытого типа</h2>
+                     <img style="margin-left:auto; margin-right: 0;" src="/assets/images/medical_logo.svg" alt="card-doctor">
+                </div>
+                <div id="mrt-text-open">
+                    Аппарат МРТ открытого типа - это незамкнутое устройство, в<br> котором все датчики и источник магнитного поля расположены<br>горизонтально, над и под столом. Он работает только в одной<br>плоскости - перпендикулярно.
+                </div>
+             </a>
+        <ng-template ngbNavContent>
+          <div class="info">
+            <h2 style="margin-bottom:0">Siemens Magnetom C! 0.35T</h2>
+            <div class="info-block">
+                <div class=col style="margin-right: 1.5%; margin-top: auto; margin-bottom: auto;"><img src="/assets/images/mrt-open.jpg" alt="card-doctor"></div>
+                <div class=col style="margin-left: 1.5%; display: block;">
+                   <h3 style="margin-bottom: 4%;margin-top: 3%;">ПРЕИМУЩЕСТВА МРТ В "РЖД-МЕДИЦИНА"</h3>
+                    <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Высокое качество медицинского изображения</h4></div>
+                    <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Проведение исследования пациентам с боязнью<br>замкнутого пространства</h4></div>
+                    <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Проведение исследования пациентам с изыточной<br>массой тела (до 140 кг)</h4></div>
+                    <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Комфорт пациента во время исследования</h4></div>
+                    <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Запись на консультацию к профильным специалистам</h4></div>
+                    
+                    <h3 style="margin-bottom: 4%;margin-top: 6%;">ОБЛАСТИ НАПРАВЛЕНИЯ ИССЛЕДОВАНИЯ МРТ</h3>
+                    <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Исследования головного мозга и гипофиза в том числе<br>с контрастированием</h4></div>
+                    <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Безконтрастная МР ангиография сосудов шеи и головного<br>мозга</h4></div>
+                    <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Проведение исследования пациентам с изыточной<br>массой тела (до 140 кг)</h4></div>
+                    <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Исследования позвоночника и спинного мозга</h4></div>
+                </div>        
+            </div>
+            <h3 style="color: red; margin-top: 4%;">* Обращаем Ваше внимание, что выдача описания и заключения производится через 2-3 часа после исследования</h3>
+                <div class="work-time">
+                    <div class="col"><h2>Режим работы кабинета</h2>
+                      <div style="display: flex;">
+                        <div class="col-4"><b>Понедельник - Пятница:</b><br>в две смены - ежедневно<br>8.00 - 20.00</div> 
+                        <div class="col-2"><b>Суббота:</b><br>8.00 - 14.00</div>       
+                        <div class="col-2"><b>Воскресенье:</b><br>Выходной</div>
+                      </div>                            
+                    </div>
+                        <div class="col">
+                            <h2>Контактный телефон</h2>
+                            <div class="phone">+7 (473) 265-20-73 </div>                  
+                    </div>
+            </div>
+          </div>
+          </ng-template>
+          </li>
+
+          
+           <li [ngbNavItem]="2" (click)="onSave('2')" id="ngbNavItem_2" style="margin-left: 2%;">
+            <a ngbNavLink class="ngbNavLink_2">
+                <div style="display: flex;">
+                    <h2 id="head-close" style="margin-left:0; margin-right: auto;">Закрытого типа</h2>
+                    <img style="margin-left:auto; margin-right: 0;" src="/assets/images/medical_logo.svg" alt="card-doctor">
+               </div>
+               <div id="mrt-text-close">
+                Закрытый томограф имеет вид трубного туннеля, куда подается<br>передвижной стол с пациентом. Диаметр камеры составляет<br>60-70 см, длина — 1,4-2 м. Магнитное поле воздействует на<br>обследуемого со всех сторон.
+            </div>
+            </a>
+          <ng-template ngbNavContent>
+
+            <div class="info">
+                <h2 style="margin-bottom:0">GE Signa Creator 1.5T</h2>
+                <div class="info-block">
+                    <div class=col style="margin-right: 1.5%; margin-top: auto; margin-bottom: auto;"><img src="/assets/images/mrt-close.jpg" alt="card-doctor"></div>
+                    <div class=col style="margin-left: 1.5%; display: block;">
+                       <h3 style="margin-bottom: 4%;margin-top: 3%;">ПРЕИМУЩЕСТВА МРТ В "РЖД-МЕДИЦИНА"</h3>
+                        <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Высокое качество медицинского изображения</h4></div>
+                        <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Проведение исследования пациентам с боязнью<br>замкнутого пространства</h4></div>
+                        <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Проведение исследования пациентам с изыточной<br>массой тела (до 140 кг)</h4></div>
+                        <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Комфорт пациента во время исследования</h4></div>
+                        <div class="edge"><img src="/assets/images/union1.svg" alt="card-doctor"><h4>Запись на консультацию к профильным специалистам</h4></div>
+                        
+                        <h3 style="margin-bottom: 4%;margin-top: 6%;">ОБЛАСТИ НАПРАВЛЕНИЯ ИССЛЕДОВАНИЯ МРТ</h3>
+                        <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Исследования головного мозга и гипофиза в том числе<br>с контрастированием</h4></div>
+                        <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Безконтрастная МР ангиография сосудов шеи и головного<br>мозга</h4></div>
+                        <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Проведение исследования пациентам с изыточной<br>массой тела (до 140 кг)</h4></div>
+                        <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Исследования позвоночника и спинного мозга</h4></div>
+                        <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Обследования органов брюшной полости</h4></div>
+                        <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Обследования органов малого таза</h4></div>
+                        <div class="edge"><img src="/assets/images/union2.svg" alt="card-doctor"><h4>Визуализация мягких тканей</h4></div>
+                    </div>        
+                </div>
+                <h3 style="color: red; margin-top: 4%;">* Обращаем Ваше внимание, что выдача описания и заключения производится через 2-3 часа после исследования</h3>
+                    <div class="work-time">
+                        <div class="col"><h2>Режим работы кабинета</h2>
+                          <div style="display: flex;">
+                            <div class="col-4"><b>Понедельник - Пятница:</b><br>в две смены - ежедневно<br>8.00 - 20.00</div> 
+                            <div class="col-2"><b>Суббота:</b><br>8.00 - 14.00</div>       
+                            <div class="col-2"><b>Воскресенье:</b><br>Выходной</div>
+                          </div>                            
+                        </div>
+                            <div class="col">
+                                <h2>Контактный телефон</h2>
+                                <div class="phone">+7 (473) 265-20-73 </div>                  
+                        </div>
+                </div>
+              </div>
+
+           </ng-template>
+           </li>
+         </ul>
+  
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="services">
+       <div style="margin-left: 0;margin-right: auto;"><h1>Все услуги</h1></div>
+        <div style="margin-left: auto;margin-right: 0;"><a>Главная / Услуги</a></div>
+    </div>
+
+    <div class="diag_cards">
+            <div class=col id="card_1" (mouseover)='over1()' (mouseout)='out1()'>
+                <div class="card_head">
+                    <div class="ser_head"><h2 id="card_h2_1">Рентгенологические<br>исследования</h2></div>
+                    <div style="margin-left: auto;margin-right: 0;margin-top: auto;margin-bottom: auto;">     
+                        <a>
+                            <img src="/assets/images/medical_logo.svg" alt="card-doctor">
+                        </a>     
+                    </div>
+                </div>
+                В нашем медицинском учреждении<br>проводится медицинская визуализация<br>при помощи рентгеновских лучей.<br>Рентгенография даёт возможность<br>обследовать некоторые внутренние<br>органы, получить сведения об их<br>расположении, форме. Используя<br>рентген, врач может обнаружить<br>определённые конкременты в полых<br>органах, трещины и переломы костей,<br>некоторые опухоли, диагностировать<br>воспалительный процесс и т. д.<br>Опытные врачи добиваются высокой<br>информативности получаемых данных.
+            </div>
+
+
+        <div class=col id="card_2" (mouseover)='over2()' (mouseout)='out2()'>
+                <div class="card_head">
+                    <div class="ser_head"><h2 id="card_h2_2">Компьютерная<br>томография</h2></div>
+                    <div style="margin-left: auto;margin-right: 0;margin-top: auto;margin-bottom: auto;">     
+                        <a>
+                            <img src="/assets/images/medical_logo.svg" alt="card-doctor">
+                        </a>     
+                    </div>
+                </div>
+                Компьютерная томография позволяет<br>послойно сканировать орган и<br>прилегающие к нему анатомические<br>структуры. В основе метода находится<br>рентгеновское излучение. Лучи<br>поглощаются тканями в разной<br>степени, в связи с чем, в частности,<br>возникает разница между<br>изображениями тканей на<br>томограммах. КТ – неинвазивное<br>исследование. Современная<br>компьютерная томография отличается<br>высокой точностью. Определить, нужно<br>ли выполнять томографию, должен<br>врач.
+        </div>
+
+        <div class=col id="card_3" (mouseover)='over3()' (mouseout)='out3()'>  
+                <div class="card_head">
+                    <div class="ser_head"><h2 id="card_h2_3">Магнитно-резонансная<br>томография</h2></div>
+                    <div style="margin-left: auto;margin-right: 0;margin-top: auto;margin-bottom: auto;">     
+                        <a>
+                            <img src="/assets/images/medical_logo.svg" alt="card-doctor">
+                        </a>     
+                    </div>
+                </div>
+                Наше медицинское учреждение<br>предлагает вам широкий спектр МРТ-<br>исследований, в том числе МРТ<br>открытого типа. Голова, позвоночник,<br>сосуды, живот и малый таз, суставы и<br>мягкие ткани - магнитно-резонансная<br>томография поможет врачу поставить<br>диагноз при целом ряде заболеваний<br>этих областей. Безопасность и<br>высокая информативность метода<br>позволяют ему оставаться на<br>передовом крае диагностики,<br>способствуют более раннему<br>обнаружению патологии и,<br>соответственно, улучшению качества<br>лечения.  
+        </div>
+    </div>
+
+    <div class="cost" id="cost">
+      <div style="margin-left:0; margin-right: auto;"><h2>Стоимость услуги</h2></div>
+      <div style="margin-left:auto; margin-right: 0;"><h3 style="color:red;letter-spacing: 0.05em; text-decoration-line: underline;"> * Обращаем Ваше внимание, что запись на исследования осуществляется по телефону</h3></div>
+    </div>
+
+
+    <div class="dropdown" style="margin-top: 5%;margin-bottom: 5%;">
+    <a class="button_dropdown" role="button" type="button"  data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+        <h5 style="margin-left:0;margin-right: auto;">Выберите метод исследования</h5>
+        <img src="/assets/images/shape2.svg" style="margin-left:auto;margin-right: 0;margin-top: auto;margin-bottom: auto;" alt="card-doctor">
+    </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">       
+        <a class="dropdown-item" id="drop_item" role="button" (click)="Mrt()" >Магнитно-резонансная томография</a>
+        <a class="dropdown-item" id="drop_item" role="button" (click)="Rkt()">Мультиспиральная компьютерная томография</a>
+        <a class="dropdown-item" id="drop_item" role="button" (click)="Rentgen()">Рентгенологические исследования</a>
+      </div> 
+    </div> 
+      <app-price-mrt id="mrt" *ngIf="isMrt"></app-price-mrt>
+      <app-price-rkt id="rkt" *ngIf="isRkt"></app-price-rkt>
+      <app-price-rentgen id="rentgen" *ngIf="isRentgen"></app-price-rentgen> 
+</div>
+

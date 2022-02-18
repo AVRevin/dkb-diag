@@ -1,0 +1,99 @@
+.footer
+{
+    position: absolute;
+    width: 100%;
+    height: 387px;
+    background: #0067A2;
+}
+
+@media screen and (min-width:1280px)
+{.container
+{
+    max-width: 1260px;
+}
+}
+
+/* Notice about contraindications*/
+
+.notice
+{
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#col-notice
+{
+    font-family: 'GilroyRegular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.col
+{
+    padding: 0;
+
+}
+.container
+{
+    padding: 20px 5px 41px;
+}
+
+
+
+/* main-container */
+
+.main-container
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+}
+
+#logos
+{
+    display: block;
+    color: #FFFFFF;
+}
+
+#pages
+{
+    display: block;
+    color: #FFFFFF;
+    
+}
+#mode
+{
+    display: block;
+    color: #FFFFFF;
+}
+
+#contact
+{
+    display: block;
+    color: #FFFFFF;
+}
+
+
+.contract
+{
+    padding-top: 20px;
+    display: block;
+    color: #FFFFFF;
+    font-family: 'GilroyRegular';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.h2
+{
+    color: white;
+}
